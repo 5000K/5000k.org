@@ -3,153 +3,285 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/output.css" />
-    <title>5000K</title>
+    <title>5000K — software you actually own</title>
+    <meta
+      name="description"
+      content="We build software you actually own. Small enough to understand, direct enough to use, solid enough to keep."
+    />
   </head>
-  <body class="bg-zinc-950 text-zinc-300 antialiased min-h-screen font-mono">
+  <body
+    class="bg-zinc-950 text-zinc-300 antialiased min-h-screen font-sans selection:bg-amber-300/25 selection:text-amber-50"
+  >
     <!-- Nav -->
     <header
-      class="fixed top-0 inset-x-0 z-50 border-b border-zinc-800/60 bg-zinc-950/80 backdrop-blur-sm"
+      class="fixed top-0 inset-x-0 z-50 border-b border-zinc-800/60 bg-zinc-950/80 backdrop-blur-md"
     >
       <div
         class="max-w-3xl mx-auto px-6 h-12 flex items-center justify-between"
       >
-        <span class="text-white font-semibold tracking-tight text-sm"
-          >5000K</span
+        <a
+          href="/"
+          class="font-serif text-zinc-50 text-base tracking-tight leading-none"
         >
+          5000<span class="text-amber-300">K</span>
+        </a>
         <a
           href="https://github.com/5000K"
           target="_blank"
           rel="noopener"
-          class="inline-block text-xs text-zinc-500 hover:text-white transition-colors border-b border-zinc-700 hover:border-zinc-400 pb-px"
-          >GitHub &nearr;</a
+          class="text-xs text-zinc-400 hover:text-zinc-50 transition-colors"
+          >GitHub <span aria-hidden="true">↗</span></a
         >
       </div>
     </header>
 
-    <main class="max-w-3xl mx-auto px-6 pt-32 pb-24 space-y-24">
+    <main class="max-w-3xl mx-auto px-6 pt-28 pb-24">
       <!-- Hero -->
-      <section class="space-y-6">
+      <section class="space-y-10">
         <h1
-          class="text-4xl sm:text-5xl font-bold text-white leading-tight tracking-tight"
+          class="font-serif font-medium text-4xl sm:text-5xl lg:text-6xl text-zinc-50 leading-[1.02] tracking-tight"
         >
-          We build software<br />you actually own.
+          We build software<br />
+          you actually <em class="italic font-normal text-amber-300">own</em>.
         </h1>
-        <p class="text-zinc-400 text-lg leading-relaxed max-w-xl">
-          We make tools that stay with you — small enough to understand, direct
-          enough to use, solid enough to keep.
-        </p>
       </section>
-
-      <!-- Divider -->
-      <div class="border-t border-zinc-800"></div>
-
-      <!-- Principles -->
-      <section class="space-y-12">
-        <h2 class="text-xs tracking-widest text-zinc-500 uppercase">
-          What we believe
-        </h2>
-
-        <div
-          class="grid gap-px bg-zinc-800 border border-zinc-800 rounded-lg overflow-hidden sm:grid-cols-2"
-        >
-          <div class="bg-zinc-950 p-6 space-y-2">
-            <p class="text-white text-sm font-semibold">
-              Ownership over access
-            </p>
-            <p class="text-zinc-500 text-sm leading-relaxed">
-              Software should give you more control, not less. No gate-keeping.
-              No tenant traps.
-            </p>
-          </div>
-
-          <div class="bg-zinc-950 p-6 space-y-2">
-            <p class="text-white text-sm font-semibold">
-              Simplicity as practice
-            </p>
-            <p class="text-zinc-500 text-sm leading-relaxed">
-              A simple system is easier to host, debug, trust, change, and keep
-              alive for years.
-            </p>
-          </div>
-
-          <div class="bg-zinc-950 p-6 space-y-2">
-            <p class="text-white text-sm font-semibold">
-              Complexity must justify itself
-            </p>
-            <p class="text-zinc-500 text-sm leading-relaxed">
-              We would rather make a sharp tool than a vague platform. Every
-              layer must earn its place.
-            </p>
-          </div>
-
-          <div class="bg-zinc-950 p-6 space-y-2">
-            <p class="text-white text-sm font-semibold">
-              Data that stays yours
-            </p>
-            <p class="text-zinc-500 text-sm leading-relaxed">
-              Plain formats. Visible moving parts. Integration points that don't
-              require surrender.
-            </p>
-          </div>
-
-          <div class="bg-zinc-950 p-6 space-y-2">
-            <p class="text-white text-sm font-semibold">Security by shape</p>
-            <p class="text-zinc-500 text-sm leading-relaxed">
-              Security and privacy built into the tool's design — not pasted on
-              as branding.
-            </p>
-          </div>
-
-          <div class="bg-zinc-950 p-6 space-y-2">
-            <p class="text-white text-sm font-semibold">Preserved exits</p>
-            <p class="text-zinc-500 text-sm leading-relaxed">
-              Adopt our tools and become more independent, not less. Leave
-              without losing anything.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Divider -->
-      <div class="border-t border-zinc-800"></div>
-
-      <!-- Manifesto pull quote -->
-      <section class="space-y-6">
-        <h2 class="text-xs tracking-widest text-zinc-500 uppercase">
-          Manifesto
-        </h2>
-        <blockquote
-          class="border-l-2 border-zinc-600 pl-6 space-y-4 text-zinc-400 text-sm leading-relaxed"
-        >
-          <p>
-            We do not want software that only works as long as someone else
-            keeps the gate open. We do not want products that create artificial
-            complexity in order to justify themselves. We do not want systems
-            that slowly turn their users into tenants.
+      <!-- Section § 03 — Manifesto -->
+      <section id="manifesto" class="mt-32 scroll-mt-20">
+        <blockquote class="mt-10 space-y-6 max-w-prose">
+          <p
+            class="font-serif text-2xl sm:text-3xl text-zinc-100 leading-[1.3] tracking-tight"
+          >
+            We don't believe in rituals. Complexity is a cost, not a virtue.
+            Data needs to be free and portable.
           </p>
-          <p>We build software that stays close to its purpose.</p>
+          <p class="font-serif text-xl text-zinc-300 leading-[1.3]">
+            Simple. Predictable. Extensible. Yours.
+          </p>
+          <a
+            href="https://github.com/5000K/5000k.org/blob/main/MANIFEST.md"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-1.5 text-xs text-zinc-500 hover:text-amber-300 transition-colors"
+          >
+            <span>Read the full manifest</span>
+            <span aria-hidden="true">↗</span>
+          </a>
         </blockquote>
-        <a
-          href="https://github.com/5000K/5000k.org/blob/main/MANIFEST.md"
-          target="_blank"
-          rel="noopener"
-          class="inline-block text-xs text-zinc-500 hover:text-white transition-colors border-b border-zinc-700 hover:border-zinc-400 pb-px"
+      </section>
+
+      <!-- Section § 01 — Principles -->
+      <section id="principles" class="mt-32 scroll-mt-20 hidden">
+        <ol class="border-b border-zinc-800">
+          <li
+            class="border-t border-zinc-800/80 py-6 grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr] gap-x-6 sm:gap-x-10 group"
+          >
+            <span
+              class="font-mono text-xs text-zinc-600 pt-1.5 group-hover:text-amber-300/80 transition-colors"
+              >01</span
+            >
+            <div class="space-y-2">
+              <h3 class="text-zinc-50 text-base font-medium">
+                Ownership over access
+              </h3>
+              <p class="text-zinc-500 text-[15px] leading-relaxed max-w-prose">
+                Software should give you more control, not less. No
+                gate-keeping. No tenant traps.
+              </p>
+            </div>
+          </li>
+          <li
+            class="border-t border-zinc-800/80 py-6 grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr] gap-x-6 sm:gap-x-10 group"
+          >
+            <span
+              class="font-mono text-xs text-zinc-600 pt-1.5 group-hover:text-amber-300/80 transition-colors"
+              >02</span
+            >
+            <div class="space-y-2">
+              <h3 class="text-zinc-50 text-base font-medium">
+                Simplicity as practice
+              </h3>
+              <p class="text-zinc-500 text-[15px] leading-relaxed max-w-prose">
+                A simple system is easier to host, debug, trust, change, and
+                keep alive for years.
+              </p>
+            </div>
+          </li>
+          <li
+            class="border-t border-zinc-800/80 py-6 grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr] gap-x-6 sm:gap-x-10 group"
+          >
+            <span
+              class="font-mono text-xs text-zinc-600 pt-1.5 group-hover:text-amber-300/80 transition-colors"
+              >03</span
+            >
+            <div class="space-y-2">
+              <h3 class="text-zinc-50 text-base font-medium">
+                Complexity must justify itself
+              </h3>
+              <p class="text-zinc-500 text-[15px] leading-relaxed max-w-prose">
+                We would rather make a sharp tool than a vague platform. Every
+                layer must earn its place.
+              </p>
+            </div>
+          </li>
+          <li
+            class="border-t border-zinc-800/80 py-6 grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr] gap-x-6 sm:gap-x-10 group"
+          >
+            <span
+              class="font-mono text-xs text-zinc-600 pt-1.5 group-hover:text-amber-300/80 transition-colors"
+              >04</span
+            >
+            <div class="space-y-2">
+              <h3 class="text-zinc-50 text-base font-medium">
+                Data that stays yours
+              </h3>
+              <p class="text-zinc-500 text-[15px] leading-relaxed max-w-prose">
+                Plain formats. Visible moving parts. Integration points that
+                don't require surrender.
+              </p>
+            </div>
+          </li>
+          <li
+            class="border-t border-zinc-800/80 py-6 grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr] gap-x-6 sm:gap-x-10 group"
+          >
+            <span
+              class="font-mono text-xs text-zinc-600 pt-1.5 group-hover:text-amber-300/80 transition-colors"
+              >05</span
+            >
+            <div class="space-y-2">
+              <h3 class="text-zinc-50 text-base font-medium">
+                Security by shape
+              </h3>
+              <p class="text-zinc-500 text-[15px] leading-relaxed max-w-prose">
+                Security and privacy built into the tool's design — not pasted
+                on as branding.
+              </p>
+            </div>
+          </li>
+          <li
+            class="border-t border-zinc-800/80 py-6 grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr] gap-x-6 sm:gap-x-10 group"
+          >
+            <span
+              class="font-mono text-xs text-zinc-600 pt-1.5 group-hover:text-amber-300/80 transition-colors"
+              >06</span
+            >
+            <div class="space-y-2">
+              <h3 class="text-zinc-50 text-base font-medium">
+                Preserved exits
+              </h3>
+              <p class="text-zinc-500 text-[15px] leading-relaxed max-w-prose">
+                Adopt our tools and become more independent, not less. Leave
+                without losing anything.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section § 02 — Projects -->
+      <section id="projects" class="mt-32 scroll-mt-20">
+        <header
+          class="flex items-baseline justify-between border-b border-zinc-800 pb-4"
         >
-          Read the full manifest &nearr;
-        </a>
+          <div class="flex items-baseline gap-4">
+            <h2
+              class="font-mono text-xs tracking-widest text-zinc-200 uppercase"
+            >
+              Current projects
+            </h2>
+          </div>
+        </header>
+
+        <div class="mt-8 space-y-4">
+          <a
+            href="https://github.com/5000K/5000blogs"
+            target="_blank"
+            rel="noopener"
+            class="group block rounded-lg border border-zinc-800 p-6 hover:border-amber-300/40 hover:bg-amber-300/[0.02] transition-colors"
+          >
+            <div class="flex flex-col sm:flex-row gap-6 items-start">
+              <div
+                class="w-24 sm:w-28 shrink-0 rounded-md bg-zinc-900 border border-zinc-800/60 p-3 aspect-square flex items-center justify-center"
+              >
+                <img
+                  src="/5000blogs.png"
+                  alt="5000blogs"
+                  class="w-full h-auto"
+                />
+              </div>
+              <div class="space-y-3 min-w-0 flex-1">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                  <p class="text-zinc-50 text-base font-medium">5000blogs</p>
+                </div>
+                <p class="text-zinc-400 text-sm leading-relaxed">
+                  A lightweight platform for publishing markdown. Ships as a
+                  self-contained server or a Go library, targets a perfect
+                  Lighthouse score, and generates feeds and social previews.
+                </p>
+                <span
+                  class="inline-flex items-center gap-1.5 text-xs text-zinc-500 group-hover:text-amber-300 transition-colors font-mono"
+                >
+                  github.com/5000K/5000blogs
+                  <span aria-hidden="true">↗</span>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/5000K/doth"
+            target="_blank"
+            rel="noopener"
+            class="group block rounded-lg border border-zinc-800 p-6 hover:border-amber-300/40 hover:bg-amber-300/[0.02] transition-colors"
+          >
+            <div class="flex flex-col sm:flex-row gap-6 items-start">
+              <div
+                class="w-24 sm:w-28 shrink-0 rounded-md bg-zinc-900 border border-zinc-800/60 p-3 aspect-square flex items-center justify-center"
+              >
+                <img src="/doth.png" alt="doth" class="w-full h-auto" />
+              </div>
+              <div class="space-y-3 min-w-0 flex-1">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                  <p class="text-zinc-50 text-base font-medium">doth</p>
+                </div>
+                <p class="text-zinc-400 text-sm leading-relaxed">
+                  A distro-agnostic
+                  <code
+                    class="font-mono text-zinc-300 bg-zinc-900 px-1.5 py-0.5 rounded text-[12px] border border-zinc-800/60"
+                    >.config</code
+                  >
+                  build system for Linux. Deploy dotfiles as copies, symlinks,
+                  or rendered templates, and install dependencies across common
+                  package managers.
+                </p>
+                <span
+                  class="inline-flex items-center gap-1.5 text-xs text-zinc-500 group-hover:text-amber-300 transition-colors font-mono"
+                >
+                  github.com/5000K/doth
+                  <span aria-hidden="true">↗</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-zinc-800 bg-zinc-950">
+    <footer class="border-t border-zinc-800/60 bg-zinc-950">
       <div
-        class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between"
+        class="max-w-3xl mx-auto px-6 py-8 flex flex-col items-center justify-center gap-3"
       >
-        <span class="text-xs text-zinc-600">2026, 5000K</span>
-        <span class="text-xs text-zinc-600"
-          >We build. For builders. For you.</span
-        >
+        <p>5000K, 2026</p>
+        <p class="font-mono text-[11px] text-zinc-600">
+          We build. For builders. For you.
+        </p>
       </div>
     </footer>
   </body>
